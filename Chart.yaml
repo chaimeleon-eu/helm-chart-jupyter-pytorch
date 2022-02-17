@@ -1,0 +1,36 @@
+apiVersion: v2
+
+
+name: jupyter-pytorch
+# Short description (can be extended in the README.md)
+description: CHAIMELEON workstation with pyTorch and Jupyter Notebook web interface
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 0.0.1-dev
+
+# This is the version number of the application being deployed.
+# It is used for indicate the tag of the image to pull.
+appVersion: "0.1"
+
+
+home: https://github.com/chaimeleon-eu/helm-chart-jupyter-pytorch
+# icon: https://pbs.twimg.com/profile_images/1329395797121769472/AXv64BOJ_400x400.jpg
+icon: https://raw.githubusercontent.com/chaimeleon-eu/helm-chart-jupyter-pytorch/master/resources/logo.png
+
+
+
+sources:
+  - https://github.com/chaimeleon-eu/workstation-images
+# - https://chaimeleon.eu/
+  - https://pytorch.org/docs
+#  - https://docs.jupyter.org/
+  - https://jupyter-notebook.readthedocs.io/en/latest/ui_components.html
+
+maintainers:  
+  - name: Sergio Lopez Huguet
+    email: serlohu@upv.es
+  - name: Pau Lozano
+    email: palollo@i3m.upv.es
