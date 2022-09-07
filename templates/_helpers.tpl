@@ -82,7 +82,7 @@ Create the name of the service account to use
 
 
 {{- define "jupyter-pytorch.url-path" -}}
-{{ include "chaimeleon.user-path" . }}{{ include "jupyter-tensorflow.fullname" . }}
+{{ include "chaimeleon.user-path" . }}{{ include "jupyter-pytorch.fullname" . }}
 {{- end -}}
 
 {{- define "jupyter-pytorch.access-token" }}
