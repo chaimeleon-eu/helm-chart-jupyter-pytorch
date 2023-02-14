@@ -1,4 +1,6 @@
 # jupyter-pytorch
 
-Deploment of a pod running Ubuntu official image with pyTorch the option to include CUDA and request a GPU.  
-Jupyter Notebook service is included which provides a web user interface for working.
+Deployment of an Ubuntu desktop with pyTorch and optionally include CUDA libraries when a GPU is requested.  
+X11 and LXDE (lightweight desktop) are installed.  
+VNC and SSH services are included to allow remote access through Guacamole.  
+And finally Jupyter Notebook service is included which provides a web user interface for working.  

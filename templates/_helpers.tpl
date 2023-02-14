@@ -81,14 +81,12 @@ Create the name of the service account to use
 */}}
 
 
-{{- define "jupyter-pytorch.url-path" -}}
-{{ include "chaimeleon.user-path" . }}{{ include "jupyter-pytorch.fullname" . }}
-{{- end -}}
-
-{{- define "jupyter-pytorch.access-token" }}
-{{- $secret := (lookup "v1" "Secret" .Release.Namespace (include "jupyter-pytorch.fullname" . )) }}
-{{- index $secret "data" "container-password" -}}
-{{- end -}}
+{{/*
+Print the name for the Guacamole connection.
+*/}}
+{{- define "jupyter-pytorch.connectionName" -}}
+{{- now | date "2006-01-02-15-04-05" }}--{{ include "jupyter-pytorch.fullname" . -}}
+{{- end }}
 
 {{/* Print a random string (useful for generate passwords). */}}
 {{- define "utils.randomString" -}}
