@@ -85,7 +85,7 @@ Create the name of the service account to use
 Print the name for the Guacamole connection.
 */}}
 {{- define "jupyter-pytorch.connectionName" -}}
-{{- DATE-TIME---{{ include "jupyter-pytorch.fullname" . -}}
+DATE-TIME---{{ include "jupyter-pytorch.fullname" . -}}
 {{- end }}
 
 {{/* Print a random string (useful for generate passwords). */}}
